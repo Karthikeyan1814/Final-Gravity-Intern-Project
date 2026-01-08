@@ -1,0 +1,43 @@
+.container{
+    height: auto;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    width: 90vw;
+    box-shadow: 0 8px 27px rgb(0, 0, 0,0.37);
+    margin-left: 3vw;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+    margin-top: 20px;
+    margin-bottom: 10vh;
+}
+
+@media (min-width:600px) and (max-width:1024px) {
+    .container{
+        grid-template-columns: repeat(3, 1fr);
+        gap: 5px;
+    }
+    
+}
+
+@media (max-width:600px) {
+    .container{
+        grid-template-columns: repeat(1, 1fr);
+        gap: 0;
+        padding-left: 10vw;
+    }
+    .cards{
+        margin-left: 13vw;
+    }
+}
+.cards{
+    height: 400px;
+    width: 250px;
+    background-color:  rgb(2, 2, 73);
+    margin: 20px;
+    color: white;
+    border-radius: 10px;
+    align-content: center;
+    text-align: center;
+}
